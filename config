@@ -40,6 +40,16 @@ set $WS7  7:
 set $WS8  8:
 set $WS9  9:
 set $WS0 10:
+set $WS11 11:11
+set $WS12 12:12
+set $WS13 13:13
+set $WS14 14:14
+set $WS15 15:15
+set $WS16 16:16
+set $WS17 17:17
+set $WS18 18:18
+set $WS19 19:19
+set $WS20 20:20
 
 # => 工作区切换&智能启动（添加智能启动脚本~/bin/st 自动且不重复打开工作区相应程序）
 # 自动切换到新打开的窗口(需4.12版本支持)
@@ -57,6 +67,21 @@ bindsym $mod+7 workspace $WS7
 bindsym $mod+8 workspace $WS8
 bindsym $mod+9 workspace $WS9
 bindsym $mod+0 workspace $WS0
+bindsym $mod+Control+1 workspace $WS11
+bindsym $mod+Control+2 workspace $WS12
+bindsym $mod+Control+3 workspace $WS13
+bindsym $mod+Control+4 workspace $WS14
+bindsym $mod+Control+5 workspace $WS15
+bindsym $mod+Control+6 workspace $WS16
+bindsym $mod+Control+7 workspace $WS17
+bindsym $mod+Control+8 workspace $WS18
+bindsym $mod+Control+9 workspace $WS19
+bindsym $mod+Control+0 workspace $WS20
+
+
+
+bindsym mod1+Control+Left workspace prev
+bindsym mod1+Control+Right workspace next
 
 # => 快捷启动
 bindsym $mod+Return exec --no-startup-id xfce4-terminal
