@@ -102,8 +102,8 @@ hide_edge_borders both
 bindsym $mod+b border toggle
 
 # => 新建窗口的分割方向
-bindsym $mod+h split h
-bindsym $mod+v split v
+#bindsym $mod+h split h
+#bindsym $mod+v split v
 
 # => 移动窗口
 bindsym $mod+Left  move left
@@ -130,10 +130,10 @@ bindsym $mod+Shift+q focus child
 # 焦点切换到浮动窗口
 bindsym $mod+Shift+space focus mode_toggle
 #
-bindsym $mod+w focus up
-bindsym $mod+s focus down
-bindsym $mod+a focus left
-bindsym $mod+d focus right
+bindsym $mod+k focus up
+bindsym $mod+j focus down
+bindsym $mod+n focus left
+bindsym $mod+l focus right
 
 # => 布局切换
 # 切换到堆叠布局
