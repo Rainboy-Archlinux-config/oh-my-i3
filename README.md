@@ -12,6 +12,29 @@
 - xcompmgr透明插件（可选）
 - infinality字体渲染美化（可选）
 
+```sh
+sudo pacman -S feh dmenu conky 
+sudo pacman -S fcitx fcitx-rime fcitx-configtool
+```
+
+# 安装
+
+```sh
+git clone this ~/.config/i3
+cp .xinitrc ~
+```
+
+安装字体
+
+```sh
+mkdir ~/.fonts
+cp -r font-awesome ~/.fonts
+mkfontscale
+mkfontdir
+```
+
+修改config，conky的相关配置！
+
 ## 字体
 
 - Monaco:一个很好看的等宽英文字体，非常适用于写代码，若显示不佳请用infinality渲染
@@ -30,6 +53,7 @@ cd oh-my-i3
 # 安装
 sh install.sh
 ```
+## 
 
 若已运行i3需要 `Alt+Shift+R` 重载入配置
 

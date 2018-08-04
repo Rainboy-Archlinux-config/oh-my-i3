@@ -15,9 +15,9 @@
 
 # => 开机自启（根据需要取消相应的注释#）
 # 壁纸须先安装feh，并在此指定路径
-#exec --no-startup-id feh --bg-scale "$HOME/.config/i3/wallpaper.png"
-exec --no-startup-id feh --bg-scale "$HOME/.i3/wallpaper.png"
-
+exec --no-startup-id feh --bg-scale "$HOME/.config/i3/wallpaper.png"
+#exec --no-startup-id feh --bg-scale "$HOME/.i3/wallpaper.png"
+exec --no-startup-id VBoxClient-all
 # 启动fcitx输入法
 exec --no-startup-id fcitx
 # 设置透明须先安装xcompmgr，并在此指定软件和透明度（默认0.75），sleep保证transset在其所设置的软件之后启动，根据情况调节大小
@@ -205,8 +205,7 @@ client.background       #FFFFFF
 bindsym $mod+m bar mode toggle
 bar {
     # i3bar调用
-    #status_command conky -c $HOME/.config/i3/conkyrc_bar
-    status_command conky -c $HOME/.i3/conkyrc_bar
+    status_command conky -c $HOME/.config/i3/conkyrc_bar
     # 显示位置
     position top
     # 是否隐藏
